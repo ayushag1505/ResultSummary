@@ -1,0 +1,141 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+section{
+    width: 55vw;
+    height: 60vh;
+    margin: 20vh auto;
+    display: flex;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0px 19px 20px 10px rgb(204, 233, 243);
+}
+
+.container-1{
+    background-color: rgb(76, 76, 253);
+    flex: 1;
+    padding: 10px;
+    color: white;
+    border-radius: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.container-1 h3{
+    font-size: 1.6rem;
+    padding: 8px;
+}
+.container-1 h4{
+    font-size: 1.25rem;
+    opacity: 0.5;
+}
+.container-1 .box-1{
+    height: 100%;
+    width: 40%;
+    border-radius: 50%;
+    background: rgb(9, 9, 165);
+    margin: 10px auto;
+}
+.container-1 .box-1 h1{
+    font-size: 4rem;
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-1 .box-1 h5{
+    font-size: 1.25rem;
+    opacity: 0.5;
+    height: 35%;
+}
+.container-1 p{
+    font-size: 1.15rem;
+    padding: 0px 20px;
+    opacity: 0.7;
+}
+
+
+.container-2{
+    flex: 1;
+}
+.container-2 h4{
+    width: 80%;
+    margin: 2px auto;
+    font-size: 1.5rem;
+    padding-top: 1.3rem;
+    padding-left: 10px;
+}
+.container-2 .cell{
+    display: flex;
+    height: 12%;
+    width: 80%;
+    margin: 15px auto;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    align-items: center;
+}
+.cell .left{
+    flex: 2;
+    text-align: left;
+}
+.cell .right{
+    justify-content: flex-end;
+}
+.cell h6{
+    font-size: 1.1rem;
+}
+
+button{
+    width: 80%;
+    height: 12%;
+    padding: 10px;
+    background: rgb(55, 53, 53);
+    color: white;
+    border-radius: 20px;
+    font-size: 1.1rem;
+}
+button:hover{
+    cursor: pointer;
+    color: black;
+    border: 1px solid black;
+    background: white;
+}
+
+
+@media screen and (max-width:1000px) {
+    .cell h6{
+        font-size: 0.8rem;
+    }
+    .container-1 .box-1 h1{
+        font-size: 3.5rem;
+    }
+}
+
+@media screen and (max-width:800px){
+    .cell h6{
+        font-size: 0.7rem;
+    }
+    .container-1 .box-1 h1{
+        font-size: 3.2rem;
+    }
+    .container-1 .box-1 h5{
+        font-size: 1.05rem;
+    }
+}
+
+@media screen and (max-width:600px){
+    section{
+        flex-direction: column;
+        width: 90vw;
+        height: 100vh;
+        margin: 0 auto;
+        padding: 0;
+    }
+}
